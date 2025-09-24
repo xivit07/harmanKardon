@@ -157,7 +157,7 @@
             <div class="chat-overlay-header-mobile">
                 <img class="close" src="./image_icon_2.png" alt="toggle chat overlay" />
             </div>
-            <iframe id="receiver" src="https://us.demo1.amelia.com/Amelia/ui/AmeliaCust/chat?domain=agenticcustomercare"
+            <iframe id="receiver" src="https://us.demo1.amelia.com/Amelia/ui/agentichospitality/chat?domain=agenticcustomercare"
                 frameborder="0" width="100%" height="100%" allow="geolocation; microphone; camera" onload="sendConversationAttribute('test0', 'value0')">
                 <p>Your browser does not support iframes.</p>
             </iframe>
@@ -233,7 +233,7 @@
 
             var receiverElem = document.getElementById('receiver').contentWindow;
             console.log("Send data: " + JSON.stringify(data));
-            receiverElem.postMessage(data, "https://us.demo1.amelia.com/Amelia/ui/AmeliaCust/chat?domain=agenticcustomercare");
+            receiverElem.postMessage(data, "https://us.demo1.amelia.com/Amelia/ui/agentichospitality/chat?domain=agenticcustomercare");
         }
         window.addEventListener('message', receiveMessage);
 
@@ -299,4 +299,5 @@
 </body>
 
 </html>
+
 
